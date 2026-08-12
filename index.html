@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Falling Flowers -->
+<div class="flower">🌸</div>
+<div class="flower">🌺</div>
+<div class="flower">🌼</div>
+<div class="flower">🌷</div>
+<div class="flower">🌸</div>
+<div class="flower">🌺</div>
+<div class="flower">🌼</div>
+<div class="flower">🌷</div>
+<div class="flower">🌸</div>
+<div class="flower">🌺</div>
+
+<header class="hero">
+    <h1>🌸 ABOUT MY FAMILY 🌸</h1>
+</header>
+
+<section class="welcome">
+    <h2>Welcome!</h2>
+    <p>
+        Welcome to my family website. I am happy to introduce my wonderful family.
+    </p>
+</section>
+
+<!-- FAMILY CARDS -->
+
+<div class="row">
+
+    <div class="card" onclick="showFamilyInfo('father')">
+        <img src="images/father.jpg" alt="Father">
+        <h2>MALLIKARJUN</h2>
+        <h3>Software Engineer</h3>
+        <p>My father is hardworking and always supports our family.</p>
+        <button class="card-btn">Click to Know More ❤️</button>
+    </div>
+
+    <div class="card" onclick="showFamilyInfo('mother')">
+        <img src="images/mother.jpg" alt="Mother">
+        <h2>BHAGYASHREE</h2>
+        <h3>Housewife</h3>
+        <p>My mother is loving, caring and kind.</p>
+        <button class="card-btn">Click to Know More ❤️</button>
+    </div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="card" onclick="showFamilyInfo('aditi')">
+        <img src="images/me.jpg" alt="Me">
+        <h2>ADITI</h2>
+        <h3>Student</h3>
+        <p>I love dancing, drawing and playing sports.</p>
+        <button class="card-btn">Click to Know More ❤️</button>
+    </div>
+
+    <div class="card" onclick="showFamilyInfo('agastya')">
+        <img src="images/brother.jpg" alt="Brother">
+        <h2>AGASTYA</h2>
+        <h3>Student</h3>
+        <p>My brother enjoys playing cricket.</p>
+        <button class="card-btn">Click to Know More ❤️</button>
+    </div>
+
+    <div class="card" onclick="showFamilyInfo('shraddha')">
+        <img src="images/sister.jpg" alt="Sister">
+        <h2>SHRADDHA</h2>
+        <h3>Student</h3>
+        <p>My sister likes dolls, dancing and singing.</p>
+        <button class="card-btn">Click to Know More ❤️</button>
+    </div>
+
+</div>
+
+
+<!-- ABOUT MYSELF -->
+
+<section class="about">
+
+    <div class="about-flower">🌸</div>
+
+    <h2>🌸 About Myself 🌸</h2>
+
+    <p class="about-intro">
+        Hello! I am <b>Aditi</b> 💕
+        I am the first child in my family and a cheerful student
+        who loves learning, creativity and spending time with
+        the people I love.
+    </p>
+
+    <div class="about-details">
+
+        <div class="about-item">
+            <div class="about-icon">🎓</div>
+            <h3>My Studies</h3>
+            <p>
+                I enjoy learning new things and discovering
+                interesting ideas at school.
+            </p>
+        </div>
+
+        <div class="about-item">
+            <div class="about-icon">💃</div>
+            <h3>My Hobbies</h3>
+            <p>
+                I love dancing, drawing and playing sports
+                whenever I have free time.
+            </p>
+        </div>
+
+        <div class="about-item">
+            <div class="about-icon">🎨</div>
+            <h3>My Creativity</h3>
+            <p>
+                Drawing and creative activities help me
+                express my ideas and imagination.
+            </p>
+        </div>
+
+        <div class="about-item">
+            <div class="about-icon">👨‍👩‍👧‍👦</div>
+            <h3>My Family</h3>
+            <p>
+                My family is very special to me. I love
+                spending time with them and making memories.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="about-message">
+        <span>✨</span>
+        <p>
+            "Every day is a new opportunity to learn,
+            smile and create wonderful memories!"
+        </p>
+        <span>✨</span>
+    </div>
+
+</section>
+
+
+<!-- CLICK HERE BUTTON -->
+
+<div class="button-container">
+    <button onclick="openCurtain()">Click Here ❤️</button>
+</div>
+
+
+<!-- FAMILY INFORMATION POPUP -->
+
+<div id="familyInfoPopup" class="family-popup-overlay">
+
+    <div class="family-popup-box">
+
+        <button class="popup-close" onclick="closeFamilyInfo()">×</button>
+
+        <div id="familyPopupContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- CURTAIN -->
+
+<div id="curtainPage" class="curtain-page">
+
+    <div class="left-curtain"></div>
+    <div class="right-curtain"></div>
+
+</div>
+
+
+<!-- THANK YOU POPUP -->
+
+<div id="thankYouPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <div class="thank-you-icon">❤️</div>
+
+        <h1>Thank You!</h1>
+
+        <p>
+            Thank you for visiting my Family Website.
+        </p>
+
+        <p>
+            It means a lot to me that you spent your valuable
+            time learning about my wonderful family.
+        </p>
+
+        <blockquote>
+            "Family is where life begins and love never ends."
+        </blockquote>
+
+        <p class="quote">
+            My family is my greatest blessing, my first school,
+            my biggest strength and my forever home.
+        </p>
+
+        <button onclick="closePopup()" class="close-btn">
+            Close ❤️
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
